@@ -1,0 +1,8 @@
+.DS_STORE
+.vagrant
+wp-content/plugins
+wp-content/upgrade
+wp-content/uploads
+wp-config.php
+*.sql
+/sitemap.*
