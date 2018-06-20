@@ -1,13 +1,68 @@
 $buttercup = #f5a623
 $white = #ffffff
+$cornflower_blue = #796FF0
 
-.navbar--yellow
-	background $buttercup
+body
+	font-family 'Raleway', sans-serif
+	
+.navbar--purple
+	background $cornflower_blue
 
-.nav--white, .lang-item > a
+.nav--white, .navbar-brand--white, .lang-item > a
 	color $white !important
 	
 .lang-item
 	display inline-block
 	border solid 1px $white
 	padding 5px
+	
+.lang-item:hover
+	background $buttercup
+	transition ease 1s
+	cursor pointer
+	a
+		text-decoration none
+
+.img-logo
+	width 25%
+	
+
+.nav-link--underline
+	position relative !important
+	text-decoration none !important
+	transition color .4s ease-out !important
+	&:hover 
+		color $white !important
+		right 0 !important
+		text-decoration none !important
+	&:hover:after 
+		border-color $buttercup !important
+		right 0 !important
+	&:after
+		border-radius 1em !important
+		border-top .1em solid #2F56B0 !important
+		content "" !important
+		position absolute !important
+		right 100% !important
+		bottom .14em !important
+		left 0 !important
+		transition right .4s cubic-bezier(0,.5,0,1), border-color .4s ease-out !important
+	&:hover:after 
+		animation underline 2s cubic-bezier(0,.5,0,1) infinite !important
+		border-color $buttercup !important
+	
+
+@keyframes underline{
+	0%, 10%{
+		left: 0;
+		right: 100%;
+	}
+	40%, 60%{
+		left: 0;
+		right: 0;
+	}
+	90%, 100%{ 
+		left: 100%;
+		right: 0;
+	}
+}
