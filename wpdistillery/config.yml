@@ -75,6 +75,7 @@ theme:
 # plugins to install & activate
 plugins_active:
   - https://downloads.wordpress.org/plugin/polylang.2.3.7.zip
+  - https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.12.zip
 
 # plugins to install
 #plugins_inactive:
