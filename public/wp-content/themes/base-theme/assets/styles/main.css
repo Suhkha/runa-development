@@ -27,6 +27,11 @@ body {
 .txt--small {
   font-size: 14px;
 }
+.bredcrumb--links + a {
+  font-weight: bold;
+  color: #352d5f;
+  text-decoration: none;
+}
 #general-about,
 #benefits-about,
 #benefits-list,
@@ -173,6 +178,9 @@ footer {
   display: block;
   width: 100%;
   height: auto;
+}
+.card-text {
+  font-weight: normal;
 }
 @media (min-width: 0px) and (max-width: 796px) {
   .txt--xbig {

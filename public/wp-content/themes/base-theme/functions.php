@@ -14,5 +14,24 @@ function base_theme_setup() {
 
 add_action( 'after_setup_theme', 'base_theme_setup' );
 
+function the_breadcrumb() {
+ 	if (!is_home()) {
+ 		echo '<span class="bredcrumb--links" title="';
+ 		echo get_option('home');
+ 		echo '">';
+ 		bloginfo('name');
+ 		echo "</span> » ";
+ 
+	 	if (is_category() || is_single()) {
+	 		the_category('title_li=');
 
+			if (is_single()) {
+		 		echo " » ";
+		 		the_title();
+		 	}
+	 	}elseif (is_page()) {
+	 		echo the_title();
+	 	}
+ 	}
+} 
 ?>

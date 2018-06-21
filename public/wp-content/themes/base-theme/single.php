@@ -2,6 +2,7 @@
 
 
 <main class="container container--space">
+	<?php the_breadcrumb(); ?>
 	<?php if(have_posts()): while(have_posts()): the_post(); ?>
 
 <div class="row">
@@ -26,13 +27,13 @@
 	    	</span>
 
 				<?php the_content(); ?>
-				 
+
 				<?php edit_post_link('Editar', '', '');?>
 	    </p>
 	  </div>
 	</div>
 </div>
-	<?php endwhile; endif; ?>
+	<?php endwhile;endif; ?>
 
 </main>
 

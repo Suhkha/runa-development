@@ -12,7 +12,7 @@
         <a class="nav-link nav--white nav-link--underline" href="<?php echo home_url(); ?>">Inicio</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link nav--white nav-link--underline" href="<?php echo home_url(); ?>">Blog</a>
+        <a class="nav-link nav--white nav-link--underline" href="<?php echo home_url(); ?>/blog/todo-lo-que-hacemos-en-runa/">Blog</a>
       </li>
     </ul>
     <?php wp_nav_menu(); ?>
