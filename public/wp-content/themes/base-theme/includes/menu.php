@@ -2,19 +2,29 @@
   <a class="navbar-brand navbar-brand--white" href="#">
     <?php bloginfo( 'name' ); ?>
   </a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <button class="navbar-toggler navbar-toggler--custom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link nav--white nav-link--underline" href="<?php echo home_url(); ?>">Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link nav--white nav-link--underline" href="<?php echo home_url(); ?>/blog/todo-lo-que-hacemos-en-runa/">Blog</a>
-      </li>
-    </ul>
-    <?php wp_nav_menu(); ?>
+    <?php 
+      switch ($lang) {
+        case 'en':
+          $menu = 'menu_en';
+          break;
+        default:
+          $menu = 'menu_es';
+          break;
+      }
+
+      wp_nav_menu( array(
+        'menu' => $menu
+      ));
+
+      wp_nav_menu( array(
+        'menu' => 'lang'
+      ));
+
+    ?>
   </div>
 </nav>

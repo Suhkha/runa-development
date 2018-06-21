@@ -15,6 +15,9 @@
 
 <body>
 	<main>
-		<?php get_template_part('includes/menu', 'menu'); ?>
+		<?php 
+			$lang = get_bloginfo('language');
+			get_template_part('includes/menu', 'menu'); 
+		?>
 	</main>
 </body>
