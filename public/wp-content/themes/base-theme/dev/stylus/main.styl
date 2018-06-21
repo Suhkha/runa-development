@@ -1,10 +1,24 @@
 $buttercup = #f5a623
 $white = #ffffff
 $cornflower_blue = #796FF0
+$jacarta = #352d5f
 
 body
-	font-family 'Raleway', sans-serif
+	font-family 'Nunito'
+	color $jacarta
+
+.txt--xbig
+	font-size 35px
 	
+.txt--big
+	font-size 25px
+	
+.txt--medium
+	font-size 20px
+	
+#general-about, #benefits-about, #benefits-list, #payment-options
+	margin-top 8%
+		
 .navbar--purple
 	background $cornflower_blue
 
@@ -26,7 +40,6 @@ body
 .img-logo
 	width 25%
 	
-
 .nav-link--underline
 	position relative !important
 	text-decoration none !important
@@ -50,6 +63,44 @@ body
 	&:hover:after 
 		animation underline 2s cubic-bezier(0,.5,0,1) infinite !important
 		border-color $buttercup !important
+
+.benefits--title
+	color $white
+	font-weight bold 
+	text-transform uppercase
+	display block
+	padding 10px
+	
+.main--title
+	@extends .benefits--title
+	color $jacarta
+	
+.benefits
+	background $cornflower_blue
+	color $white
+
+.start-now
+	background $buttercup
+	color $white
+	margin 30px
+	padding 20px
+	cursor pointer
+	&:hover
+		background $cornflower_blue
+		transition ease 1s
+	
+.item
+	color $jacarta
+	font-weight bold
+	text-align center
+	display block
+
+i.fas
+	display block
+	text-align center
+	font-size 50px
+	margin-bottom 5%
+	color $buttercup
 	
 
 @keyframes underline{

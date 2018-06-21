@@ -1,5 +1,21 @@
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Nunito';
+  color: #352d5f;
+}
+.txt--xbig {
+  font-size: 35px;
+}
+.txt--big {
+  font-size: 25px;
+}
+.txt--medium {
+  font-size: 20px;
+}
+#general-about,
+#benefits-about,
+#benefits-list,
+#payment-options {
+  margin-top: 8%;
 }
 .navbar--purple {
   background: #796ff0;
@@ -52,6 +68,45 @@ body {
 .nav-link--underline:hover:after {
   animation: underline 2s cubic-bezier(0, 0.5, 0, 1) infinite !important;
   border-color: #f5a623 !important;
+}
+.benefits--title,
+.main--title {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: block;
+  padding: 10px;
+}
+.main--title {
+  color: #352d5f;
+}
+.benefits {
+  background: #796ff0;
+  color: #fff;
+}
+.start-now {
+  background: #f5a623;
+  color: #fff;
+  margin: 30px;
+  padding: 20px;
+  cursor: pointer;
+}
+.start-now:hover {
+  background: #796ff0;
+  transition: ease 1s;
+}
+.item {
+  color: #352d5f;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+}
+i.fas {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 5%;
+  color: #f5a623;
 }
 @keyframes underline {
   0%, 10% {
