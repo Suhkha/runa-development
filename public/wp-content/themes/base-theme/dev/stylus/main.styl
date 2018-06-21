@@ -7,6 +7,18 @@ body
 	font-family 'Nunito'
 	color $jacarta
 
+.container--space
+	margin-top 50px
+	margin-bottom 50px
+
+.btn--jacarta
+	border solid 1px $jacarta
+	border-radius 0
+	color $jacarta
+	&:hover
+		background $jacarta
+		color $white 
+	
 .txt--xbig
 	font-size 35px
 	
@@ -14,7 +26,10 @@ body
 	font-size 25px
 	
 .txt--medium
-	font-size 20px
+	font-size 18px
+
+.txt--small
+	font-size 14px
 	
 #general-about, #benefits-about, #benefits-list, #payment-options
 	margin-top 8%
@@ -101,7 +116,45 @@ i.fas
 	font-size 50px
 	margin-bottom 5%
 	color $buttercup
+
+footer
+	background $jacarta
+	color $white
+	padding 50px 0
 	
+.footer
+	&--title
+		font-weight bold
+		display block	
+	&--content
+		display block
+	&--list
+		padding 0
+		&-item
+			list-style-type none
+			a 
+				color $white
+	&--logo
+		margin-bottom 20px
+
+
+.social
+	margin 10px 0 
+	padding 0
+	&--item 
+		display inline-block
+		a
+			width 30px
+			height 30px
+			display block
+			border solid 1px $white
+			color $white
+			line-height 2
+			text-align center
+		&:hover
+			background $buttercup
+			transition ease 1s
+			
 
 @keyframes underline{
 	0%, 10%{
@@ -117,3 +170,22 @@ i.fas
 		right: 0;
 	}
 }
+
+/*-- BLOG --*/
+.card-img
+	display block
+	width 100%
+	height auto
+
+@media (min-width:0px) and (max-width: 796px)
+	.txt--xbig
+		font-size 25px
+		
+	.txt--big
+		font-size 20px
+		
+	.txt--medium
+		font-size 14px
+
+	.txt--small
+		font-size 12px

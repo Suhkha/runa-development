@@ -2,6 +2,19 @@ body {
   font-family: 'Nunito';
   color: #352d5f;
 }
+.container--space {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.btn--jacarta {
+  border: solid 1px #352d5f;
+  border-radius: 0;
+  color: #352d5f;
+}
+.btn--jacarta:hover {
+  background: #352d5f;
+  color: #fff;
+}
 .txt--xbig {
   font-size: 35px;
 }
@@ -9,7 +22,10 @@ body {
   font-size: 25px;
 }
 .txt--medium {
-  font-size: 20px;
+  font-size: 18px;
+}
+.txt--small {
+  font-size: 14px;
 }
 #general-about,
 #benefits-about,
@@ -107,6 +123,70 @@ i.fas {
   font-size: 50px;
   margin-bottom: 5%;
   color: #f5a623;
+}
+footer {
+  background: #352d5f;
+  color: #fff;
+  padding: 50px 0;
+}
+.footer--title {
+  font-weight: bold;
+  display: block;
+}
+.footer--content {
+  display: block;
+}
+.footer--list {
+  padding: 0;
+}
+.footer--list-item {
+  list-style-type: none;
+}
+.footer--list-item a {
+  color: #fff;
+}
+.footer--logo {
+  margin-bottom: 20px;
+}
+.social {
+  margin: 10px 0;
+  padding: 0;
+}
+.social--item {
+  display: inline-block;
+}
+.social--item a {
+  width: 30px;
+  height: 30px;
+  display: block;
+  border: solid 1px #fff;
+  color: #fff;
+  line-height: 2;
+  text-align: center;
+}
+.social--item:hover {
+  background: #f5a623;
+  transition: ease 1s;
+}
+/*-- BLOG --*/
+.card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 0px) and (max-width: 796px) {
+  .txt--xbig {
+    font-size: 25px;
+  }
+  .txt--big {
+    font-size: 20px;
+  }
+  .txt--medium {
+    font-size: 14px;
+  }
+  .txt--small {
+    font-size: 12px;
+  }
 }
 @keyframes underline {
   0%, 10% {
