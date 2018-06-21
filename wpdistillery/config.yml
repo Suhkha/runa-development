@@ -73,8 +73,9 @@ theme:
 #################################################################
 
 # plugins to install & activate
-#plugins_active:
-  #- url-to-download-plugin.zip
+plugins_active:
+  - https://downloads.wordpress.org/plugin/polylang.2.3.7.zip
+  - https://downloads.wordpress.org/plugin/advanced-custom-fields.4.4.12.zip
 
 # plugins to install
 #plugins_inactive:
@@ -87,10 +88,10 @@ theme:
 # if you don't want the setup to run all tasks, set them to false
 
 setup:
-  wp: true
-  settings: true
-  theme: true
-  plugins: false
+  wp: false
+  settings: false
+  theme: false
+  plugins: true
   cleanup: false
   # adjust what data you want to be deleted within the cleanup (requires `cleanup: true`)
   comment: false
