@@ -1,6 +1,5 @@
 - git clone
 - vagrant up
-- cd /wpdistillery/ > bash wpdistillery.sh
 
 - import bd
 - change path
@@ -10,6 +9,10 @@
 - UPDATE t34am42_posts SET guid = REPLACE ( guid, 'http://development.wp', 'http://custom.com' );
 - UPDATE t34am42_posts SET post_content = REPLACE ( post_content, 'http://development.wp', 'http://custom.com' );
 - UPDATE t34am42_postmeta SET meta_value = REPLACE ( meta_value, 'http://development.wp', 'http://custom.com' );
+
+
+- cd /wpdistillery/ > bash wpdistillery.sh. ** esto instala los plugins
+
 
 
 
